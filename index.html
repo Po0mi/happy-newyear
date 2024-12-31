@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <style>
+        body {
+            font-family: 'Lucida Handwriting', cursive;
+            text-align: center;
+            background: url('https://i.pinimg.com/originals/b5/a4/26/b5a42671b5d7fee0bbf336ac62fdc43f.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fdfdfd;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 10%;
+            animation: fadeIn 3s ease-out;
+        }
+        .caption {
+            font-size: 10em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px #ff5722, 0 0 20px #ff9800, 0 0 30px #ff5722, 0 0 50px #ff9800;
+            animation: glow 1.5s infinite alternate, float 3s ease-in-out infinite;
+        }
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 3px 3px 10px #ff5722, 0 0 20px #ff9800, 0 0 40px #ff5722, 0 0 50px #ff9800;
+            }
+            50% {
+                text-shadow: 3px 3px 15px #ffff00, 0 0 30px #ff9800, 0 0 50px #ff5722, 0 0 70px #ff9800;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .caption {
+                font-size: 6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caption">Happy New Year &#127881;</div>
+    </div>
+</body>
+</html>
